@@ -47,13 +47,17 @@ Cada archivo contiene ejemplos y ejercicios relacionados con ese concepto.
 
 - Carpeta de Lodash:
     - `/Lodash/`
-    - Contiene un archivo `HTMl` con un archivo CDN para poder ejecutar los ejercicios sin tener que instalar la libreria.
+    - Contiene un archivo `HTML` con un archivo CDN para poder ejecutar los ejercicios sin tener que instalar la libreria.
      - Contiene múltiples archivos `.js` con ejercicios individuales.
         - Los resultados de veran en el inspector pulsando F12 Inspeccionar → pestaña “Consola”
 
 - Carpeta de ejercicios:
     - `/ejercicios/`
     - Contiene múltiples archivos `.js` con ejercicios individuales.
+
+- Carpeta de Errores:
+    - `/Errores/`
+    - Contiene un archivo `html` en el cual hay un script donde se muestra el manejo de errores.
 
 <BR>
 
