@@ -25,6 +25,13 @@
     }
   }
 
+class SocialMediaError extends Error{
+    constructor(msg = 'Ha ocurrido un error', ...params){
+        super(...params);
+        this.msg = msg;
+        
+    }
+}
   // Crear petición
   var request = new XMLHttpRequest();
 
