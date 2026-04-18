@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Demostraccion de llamadas de error</title>
+    <style>
+        h2, h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Llamada a la API</h1>
+    <h2>Manejo de errores</h2>
+</body>
+<script>
+    
+  // Error personalizado
+  class ApiError extends Error {
+    constructor(msg = 'Ha ocurrido un error en la API', ...params) {
+      super(...params);
+      this.msg = msg;
+    }
+  }
+
+  // Crear petición
+  var request = new XMLHttpRequest();
+
+  // Endpoint válido (puedes cambiarlo a /oops para forzar error)
+  request.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+
+  // Manejo de respuesta
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      // Caso correcto
+      var data = JSON.parse(request.responseText);
+
+      console.log("Datos recibidos:");
+      console.log(data);
+
+    } else {
+      // Error controlado de API
+      throw new ApiError(
+        'ApiError',
+        ` Ha ocurrido un error en la API con el estatus codigo de ${request.status}`
+      );
+    }
+  };
+
+  // Error de red (no hay respuesta del servidor)
+  request.onerror = function() {
+    throw new ApiError(
+      'NetworkError',
+      'A network error occurred while making the request'
+    );
+  };
+
+  // Enviar petición
+  request.send();
+</script>
+</html>
