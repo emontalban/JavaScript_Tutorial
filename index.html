@@ -12,15 +12,19 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-    <div id="quote"></div>
-<div id="author"></div>
+    <div id='parent'></div>
+
         
         <script>
-            const quote = document.querySelector('#quote');
-            const author = document.querySelector('#author');
+            const parent = document.querySelector('#parent');
+            const parrafo = document.createElement('p');
+            parrafo.classList.add('paragraph');
+            parrafo.innerHTML ="Hello";
+            console.log(parrafo);
+            const newParrafo = document.createTextNode(parrafo);
+            parent.appendChild(parrafo);
 
-            quote.innerHTML = "Innovation distinguishes between a leader and a follower";
-            author.innerHTML = '("Steve Jobs")';
+            
 
         </script>
     </body>
