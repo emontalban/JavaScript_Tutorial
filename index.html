@@ -12,17 +12,21 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-    <div id='parent'></div>
+    <div class="post-wrapper">
+    <div class="post"></div>
+    <div class="post"></div>
+    <div class="post"></div>
+</div>
 
         
         <script>
-            const parent = document.querySelector('#parent');
+            const posts = document.querySelectorAll('.post');
+            posts.forEach(post => post.remove())
             const parrafo = document.createElement('p');
-            parrafo.classList.add('paragraph');
-            parrafo.innerHTML ="Hello";
-            console.log(parrafo);
-            const newParrafo = document.createTextNode(parrafo);
-            parent.appendChild(parrafo);
+            parrafo.innerText="Posts coming soon!";
+            const postWrapper = document.querySelector('.post-wrapper');
+            postWrapper.appendChild(parrafo);
+          
 
             
 
