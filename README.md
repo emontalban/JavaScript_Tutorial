@@ -45,19 +45,49 @@ Los ejercicios están organizados por archivos según el tema:
 
 Cada archivo contiene ejemplos y ejercicios relacionados con ese concepto.
 
-- Carpeta de Lodash:
-    - `/Lodash/`
-    - Contiene un archivo `HTML` con un archivo CDN para poder ejecutar los ejercicios sin tener que instalar la libreria.
-     - Contiene múltiples archivos `.js` con ejercicios individuales.
-        - Los resultados de veran en el inspector pulsando F12 Inspeccionar → pestaña “Consola”
 
-- Carpeta de ejercicios:
-    - `/ejercicios/`
-    - Contiene múltiples archivos `.js` con ejercicios individuales.
 
-- Carpeta de Errores:
-    - `/Errores/`
-    - Contiene un archivo `html` en el cual hay un script donde se muestra el manejo de errores.
+## 📁 Carpetas adicionales
+
+### 📦 `/Lodash/`
+Contiene ejercicios específicos de la librería Lodash.
+
+Incluye:
+- Archivo `HTML` con CDN
+- Ejercicios individuales en archivos `.js`
+- Resultados visibles desde:
+  - `F12 → Inspeccionar → Consola`
+
+---
+
+### 🛠️ `/ejercicios/`
+Contiene ejercicios individuales de práctica en JavaScript.
+
+---
+
+### 🚨 `/Errores/`
+Contiene un archivo `html` en el cual hay un script donde se muestra el manejo de errores.
+- manejo de errores
+- try/catch
+
+
+---
+
+### 🌐 `/proyectos-dom/`
+Contiene pequeños proyectos interactivos organizados por carpetas.
+
+Cada ejercicio incluye:
+- `index.html`
+- `style.css`
+- `script.js`
+- `README.md`
+
+Estos ejercicios están orientados a:
+- manipulación del DOM
+- eventos
+- interacción con el navegador
+- efectos visuales
+- componentes dinámicos
 
 <BR>
 
