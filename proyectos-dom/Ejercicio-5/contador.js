@@ -10,13 +10,14 @@
     const msgCounter = document.querySelector('.msgCounter');
     const max = 144;
 
-    // msgInput.onkeyup = function(){
+     // msgInput.onkeyup = function(){
         
     //     msgCounter.innerHTML= max - this.value.length;
     //     if(!getCurrentContentLength(this.value, (max-1))){
     //         msgInput.disabled= true;
     //     }
     // }
+
 
     msgInput.addEventListener('input', function () {
 
