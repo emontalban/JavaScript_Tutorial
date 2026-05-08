@@ -41,7 +41,7 @@ Los ejercicios están organizados por archivos según el tema:
 
 - `11.async/await.js`
 
-- `12.Lodash.js`
+- `12.Manejo de errores API.html`
 
 Cada archivo contiene ejemplos y ejercicios relacionados con ese concepto.
 
