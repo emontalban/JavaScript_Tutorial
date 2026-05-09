@@ -12,20 +12,18 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-    <div class="post-wrapper">
-    <div class="post"></div>
-    <div class="post"></div>
-    <div class="post"></div>
+    <div id="wrapper"></div>
 </div>
 
         
         <script>
-            const posts = document.querySelectorAll('.post');
-            posts.forEach(post => post.remove())
-            const parrafo = document.createElement('p');
-            parrafo.innerText="Posts coming soon!";
-            const postWrapper = document.querySelector('.post-wrapper');
-            postWrapper.appendChild(parrafo);
+            const wrapper = document.querySelector('#wrapper');
+            const inserSpan = document.createElement('span');
+            inserSpan.innerText = "You got this!"
+            inserSpan.classList.add('content');
+        
+           wrapper.appendChild(inserSpan);
+           
           
 
             
