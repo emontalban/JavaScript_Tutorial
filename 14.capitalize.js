@@ -8,3 +8,6 @@ const toCapital = str =>{
 
 const longStr = "the quick brown fox jumped over the lazy dog";
 toCapital(longStr); // The Quick Brown Fox Jumped Over The Lazy Dog
+
+const shortStr = "hola numdo";
+toCapital(shortStr);
